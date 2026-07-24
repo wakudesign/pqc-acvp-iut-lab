@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "validationLevel": "mldsa-native upstream public ACVP sample harness",
+  "sampleVersion": "v1.1.0.41",
+  "profile": "OPT=0 portable",
+  "modes": {
+    "keyGen": {
+      "groups": 3,
+      "tests": 75,
+      "passed": true
+    },
+    "sigGen": {
+      "groups": 24,
+      "tests": 360,
+      "passed": true
+    },
+    "sigVer": {
+      "groups": 12,
+      "tests": 180,
+      "passed": true
+    }
+  },
+  "totalGroups": 39,
+  "totalTests": 615,
+  "sourceHashesVerifiedByPortfolioLock": true,
+  "upstreamHarnessLimitation": "The upstream ACVP client hard-codes test/build for its executables; the documented OPT=0 default path was used.",
+  "rawVectorsIncluded": false,
+  "credentialsRequired": false,
+  "passed": true
+}

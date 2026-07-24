@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "source": "mldsa-native upstream ACVP public sample cache",
+  "version": "v1.1.0.41",
+  "files": {
+    "ML-DSA-keyGen-FIPS204/expectedResults.json": "58dca0195226491c9cb117e1f0ec4cb11d4a1e3bd8b0f955371d80c99d4e8810",
+    "ML-DSA-keyGen-FIPS204/prompt.json": "02fad612a060bbcf3bbbd164caf7e9da964ba385c90e08bcd26516e3bf8a023d",
+    "ML-DSA-sigGen-FIPS204/expectedResults.json": "7b70ffeba6efe24e90760c751a7ebc4907931600645ebfa3f8a2459164d0a95d",
+    "ML-DSA-sigGen-FIPS204/prompt.json": "4305197be3c17be8f99338086eb8033ff2400f7d5b816123fc28b184c6e77a55",
+    "ML-DSA-sigVer-FIPS204/expectedResults.json": "33e0ea7dd9c3b0206712da50286ad746864371433977225ab77e8aae76358842",
+    "ML-DSA-sigVer-FIPS204/prompt.json": "2a9b7fcbefdd8e69dd6fbe6b4abb7130d855e8429aaa6f4904385e68b7e63d3a"
+  }
+}

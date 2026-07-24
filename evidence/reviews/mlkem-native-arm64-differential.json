@@ -1,0 +1,97 @@
+{
+  "comparisonBaseline": "privately retained passed PQClean ACVTS Demo responses",
+  "credentialsRequired": false,
+  "networkRequired": false,
+  "passed": true,
+  "profiles": {
+    "aarch64Native": {
+      "commit": "0ba906cb14b1c241476134d7403a811b382ca498",
+      "compiler": "cc: Apple clang version 21.0.0 (clang-2100.0.123.102)",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Werror=unused-result",
+        "-Wpedantic",
+        "-Werror",
+        "-Wmissing-prototypes",
+        "-Wshadow",
+        "-Wpointer-arith",
+        "-Wredundant-decls",
+        "-Wconversion",
+        "-Wsign-conversion",
+        "-Wno-long-long",
+        "-Wno-unknown-pragmas",
+        "-Wno-unused-command-line-argument",
+        "-O3",
+        "-fomit-frame-pointer",
+        "-std=c99",
+        "-pedantic",
+        "-MMD",
+        "-Wno-redundant-decls",
+        "-DMLK_FORCE_AARCH64",
+        "MLK_CONFIG_MULTILEVEL_BUILD=1",
+        "MLK_CONFIG_USE_NATIVE_BACKEND_ARITH=1",
+        "MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202=1",
+        "ZERO_AR_DATE=1"
+      ],
+      "name": "mlkem-native",
+      "target": "arm64-apple-darwin25.5.0",
+      "version": "v1.2.0"
+    },
+    "portable": {
+      "commit": "0ba906cb14b1c241476134d7403a811b382ca498",
+      "compiler": "cc: Apple clang version 21.0.0 (clang-2100.0.123.102)",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Werror=unused-result",
+        "-Wpedantic",
+        "-Werror",
+        "-Wmissing-prototypes",
+        "-Wshadow",
+        "-Wpointer-arith",
+        "-Wredundant-decls",
+        "-Wconversion",
+        "-Wsign-conversion",
+        "-Wno-long-long",
+        "-Wno-unknown-pragmas",
+        "-Wno-unused-command-line-argument",
+        "-O3",
+        "-fomit-frame-pointer",
+        "-std=c99",
+        "-pedantic",
+        "-MMD",
+        "-Wno-redundant-decls",
+        "MLK_CONFIG_MULTILEVEL_BUILD=1",
+        "MLK_CONFIG_USE_NATIVE_BACKEND_ARITH=0",
+        "MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202=0",
+        "ZERO_AR_DATE=1"
+      ],
+      "name": "mlkem-native",
+      "target": "arm64-apple-darwin25.5.0",
+      "version": "v1.2.0"
+    }
+  },
+  "rawSessionIdentifiersIncluded": false,
+  "schemaVersion": 1,
+  "totalTests": 240,
+  "validationLevel": "offline ARM64 profile differential",
+  "vectors": [
+    {
+      "mode": "keyGen",
+      "nativeEqualsPrivatelyRetainedPQCleanBaseline": true,
+      "nativeStatus": "generated",
+      "portableEqualsNative": true,
+      "portableStatus": "generated",
+      "tests": 75
+    },
+    {
+      "mode": "encapDecap",
+      "nativeEqualsPrivatelyRetainedPQCleanBaseline": true,
+      "nativeStatus": "generated",
+      "portableEqualsNative": true,
+      "portableStatus": "generated",
+      "tests": 165
+    }
+  ]
+}

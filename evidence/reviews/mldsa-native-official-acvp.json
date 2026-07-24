@@ -1,0 +1,244 @@
+{
+  "backend": {
+    "commit": "9b0ee84f4cf399043eca59eca4e5f8531ca1d61b",
+    "compiler": "cc: Apple clang version 21.0.0 (clang-2100.0.123.102)",
+    "flags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror=unused-result",
+      "-Wpedantic",
+      "-Werror",
+      "-Wmissing-prototypes",
+      "-Wshadow",
+      "-Wpointer-arith",
+      "-Wredundant-decls",
+      "-Wconversion",
+      "-Wsign-conversion",
+      "-Wno-long-long",
+      "-Wno-unknown-pragmas",
+      "-Wno-unused-command-line-argument",
+      "-O3",
+      "-fomit-frame-pointer",
+      "-std=c99",
+      "-pedantic",
+      "-MMD",
+      "MLD_CONFIG_MULTILEVEL_BUILD=1",
+      "MLD_CONFIG_USE_NATIVE_BACKEND_ARITH=0",
+      "MLD_CONFIG_USE_NATIVE_BACKEND_FIPS202=0",
+      "ZERO_AR_DATE=1"
+    ],
+    "name": "mldsa-native",
+    "target": "arm64-apple-darwin25.5.0",
+    "version": "v1.0.0-beta2"
+  },
+  "credentialsRequired": false,
+  "declaredScope": "FIPS204 keyGen plus pure/external sigGen and sigVer",
+  "networkRequiredAfterCache": false,
+  "passed": true,
+  "rawSessionIdentifiersIncluded": false,
+  "rawVectorsIncluded": false,
+  "runSummary": {
+    "status": "passed",
+    "totalTestsProduced": 210,
+    "totalTestsSeen": 210,
+    "totalVectorSets": 3,
+    "vectorSets": [
+      {
+        "algorithm": "ML-DSA",
+        "backend": {
+          "commit": "9b0ee84f4cf399043eca59eca4e5f8531ca1d61b",
+          "compiler": "cc: Apple clang version 21.0.0 (clang-2100.0.123.102)",
+          "flags": [
+            "-Wall",
+            "-Wextra",
+            "-Werror=unused-result",
+            "-Wpedantic",
+            "-Werror",
+            "-Wmissing-prototypes",
+            "-Wshadow",
+            "-Wpointer-arith",
+            "-Wredundant-decls",
+            "-Wconversion",
+            "-Wsign-conversion",
+            "-Wno-long-long",
+            "-Wno-unknown-pragmas",
+            "-Wno-unused-command-line-argument",
+            "-O3",
+            "-fomit-frame-pointer",
+            "-std=c99",
+            "-pedantic",
+            "-MMD",
+            "MLD_CONFIG_MULTILEVEL_BUILD=1",
+            "MLD_CONFIG_USE_NATIVE_BACKEND_ARITH=0",
+            "MLD_CONFIG_USE_NATIVE_BACKEND_FIPS202=0",
+            "ZERO_AR_DATE=1"
+          ],
+          "name": "mldsa-native",
+          "target": "arm64-apple-darwin25.5.0",
+          "version": "v1.0.0-beta2"
+        },
+        "errors": [],
+        "functionCounts": {
+          "keyGen": 75
+        },
+        "groupsSeen": 3,
+        "mode": "keyGen",
+        "revision": "FIPS204",
+        "status": "generated",
+        "testsProduced": 75,
+        "testsSeen": 75
+      },
+      {
+        "algorithm": "ML-DSA",
+        "backend": {
+          "commit": "9b0ee84f4cf399043eca59eca4e5f8531ca1d61b",
+          "compiler": "cc: Apple clang version 21.0.0 (clang-2100.0.123.102)",
+          "flags": [
+            "-Wall",
+            "-Wextra",
+            "-Werror=unused-result",
+            "-Wpedantic",
+            "-Werror",
+            "-Wmissing-prototypes",
+            "-Wshadow",
+            "-Wpointer-arith",
+            "-Wredundant-decls",
+            "-Wconversion",
+            "-Wsign-conversion",
+            "-Wno-long-long",
+            "-Wno-unknown-pragmas",
+            "-Wno-unused-command-line-argument",
+            "-O3",
+            "-fomit-frame-pointer",
+            "-std=c99",
+            "-pedantic",
+            "-MMD",
+            "MLD_CONFIG_MULTILEVEL_BUILD=1",
+            "MLD_CONFIG_USE_NATIVE_BACKEND_ARITH=0",
+            "MLD_CONFIG_USE_NATIVE_BACKEND_FIPS202=0",
+            "ZERO_AR_DATE=1"
+          ],
+          "name": "mldsa-native",
+          "target": "arm64-apple-darwin25.5.0",
+          "version": "v1.0.0-beta2"
+        },
+        "errors": [],
+        "functionCounts": {
+          "sigGen": 90
+        },
+        "groupsSeen": 6,
+        "mode": "sigGen",
+        "revision": "FIPS204",
+        "status": "generated",
+        "testsProduced": 90,
+        "testsSeen": 90
+      },
+      {
+        "algorithm": "ML-DSA",
+        "backend": {
+          "commit": "9b0ee84f4cf399043eca59eca4e5f8531ca1d61b",
+          "compiler": "cc: Apple clang version 21.0.0 (clang-2100.0.123.102)",
+          "flags": [
+            "-Wall",
+            "-Wextra",
+            "-Werror=unused-result",
+            "-Wpedantic",
+            "-Werror",
+            "-Wmissing-prototypes",
+            "-Wshadow",
+            "-Wpointer-arith",
+            "-Wredundant-decls",
+            "-Wconversion",
+            "-Wsign-conversion",
+            "-Wno-long-long",
+            "-Wno-unknown-pragmas",
+            "-Wno-unused-command-line-argument",
+            "-O3",
+            "-fomit-frame-pointer",
+            "-std=c99",
+            "-pedantic",
+            "-MMD",
+            "MLD_CONFIG_MULTILEVEL_BUILD=1",
+            "MLD_CONFIG_USE_NATIVE_BACKEND_ARITH=0",
+            "MLD_CONFIG_USE_NATIVE_BACKEND_FIPS202=0",
+            "ZERO_AR_DATE=1"
+          ],
+          "name": "mldsa-native",
+          "target": "arm64-apple-darwin25.5.0",
+          "version": "v1.0.0-beta2"
+        },
+        "errors": [],
+        "functionCounts": {
+          "sigVer": 45
+        },
+        "groupsSeen": 3,
+        "mode": "sigVer",
+        "revision": "FIPS204",
+        "status": "generated",
+        "testsProduced": 45,
+        "testsSeen": 45
+      }
+    ]
+  },
+  "runner": "pqc_acvp.mldsa_runner",
+  "sampleVersion": "v1.1.0.41",
+  "schemaVersion": 1,
+  "selectedSurface": {
+    "groups": 12,
+    "tests": 210
+  },
+  "sourceHashesVerified": true,
+  "upstreamFullSurface": {
+    "groups": 39,
+    "passed": true,
+    "tests": 615
+  },
+  "validationLevel": "pinned NIST public sample-vector replay",
+  "vectors": [
+    {
+      "functionCounts": {
+        "keyGen": 75
+      },
+      "matchesExpectedResults": true,
+      "mode": "keyGen",
+      "parameterSets": [
+        "ML-DSA-44",
+        "ML-DSA-65",
+        "ML-DSA-87"
+      ],
+      "selectedGroups": 3,
+      "selectedTests": 75,
+      "status": "generated"
+    },
+    {
+      "functionCounts": {
+        "sigGen": 90
+      },
+      "matchesExpectedResults": true,
+      "mode": "sigGen",
+      "parameterSets": [
+        "ML-DSA-44",
+        "ML-DSA-65",
+        "ML-DSA-87"
+      ],
+      "selectedGroups": 6,
+      "selectedTests": 90,
+      "status": "generated"
+    },
+    {
+      "functionCounts": {
+        "sigVer": 45
+      },
+      "matchesExpectedResults": true,
+      "mode": "sigVer",
+      "parameterSets": [
+        "ML-DSA-44",
+        "ML-DSA-65",
+        "ML-DSA-87"
+      ],
+      "selectedGroups": 3,
+      "selectedTests": 45,
+      "status": "generated"
+    }
+  ]
+}

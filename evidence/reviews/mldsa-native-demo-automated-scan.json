@@ -1,0 +1,9 @@
+{
+  "bytesScanned": 4187,
+  "filesScanned": 4,
+  "findings": [],
+  "passed": true,
+  "rootLabel": "mldsa-native-demo-session",
+  "scanner": "tools/check_public_tree.py",
+  "schemaVersion": 1
+}

@@ -1,0 +1,15 @@
+[
+  {"acvVersion": "1.0"},
+  {
+    "vsId": 7,
+    "algorithm": "ML-KEM",
+    "mode": "encapDecap",
+    "revision": "FIPS203",
+    "testGroups": [
+      {
+        "tgId": 9,
+        "tests": [{"tcId": 11, "testPassed": true}]
+      }
+    ]
+  }
+]

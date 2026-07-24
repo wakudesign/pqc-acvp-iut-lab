@@ -1,0 +1,53 @@
+{
+  "algorithm": "ML-KEM",
+  "claim": "ACVTS Demo responses passed and are reproducible offline",
+  "claimLimitations": [
+    "Not a CAVP certificate",
+    "Not a CMVP module validation",
+    "Raw vectors and server identifiers are not included"
+  ],
+  "passedTests": 240,
+  "revision": "FIPS203",
+  "schemaVersion": 1,
+  "serverEnvironment": "NIST ACVTS Demo",
+  "sessionAlias": "baseline-session",
+  "sessionDisposition": "passed",
+  "totalTests": 240,
+  "vectors": [
+    {
+      "alias": "mlkem-keygen",
+      "disposition": "passed",
+      "functions": [
+        "keyGen"
+      ],
+      "groups": 3,
+      "mode": "keyGen",
+      "parameterSets": [
+        "ML-KEM-1024",
+        "ML-KEM-512",
+        "ML-KEM-768"
+      ],
+      "passedTests": 75,
+      "tests": 75
+    },
+    {
+      "alias": "mlkem-encap-decap",
+      "disposition": "passed",
+      "functions": [
+        "decapsulation",
+        "decapsulationKeyCheck",
+        "encapsulation",
+        "encapsulationKeyCheck"
+      ],
+      "groups": 12,
+      "mode": "encapDecap",
+      "parameterSets": [
+        "ML-KEM-1024",
+        "ML-KEM-512",
+        "ML-KEM-768"
+      ],
+      "passedTests": 165,
+      "tests": 165
+    }
+  ]
+}

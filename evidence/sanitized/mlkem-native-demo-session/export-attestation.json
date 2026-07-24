@@ -1,0 +1,10 @@
+{
+  "credentialsRequired": false,
+  "exporter": "tools/export_evidence.py",
+  "exporterVersion": "0.1.0",
+  "humanReview": "pending",
+  "policySha256": "39d4312affbb57b9a3e9e01475338fa9ad5b8705ac870206344cb5b8c5f04b76",
+  "rawVectorsIncluded": false,
+  "schemaVersion": 1,
+  "sourceHashesSha256": "8e5a0c4da27ffdfca956526fe66ee030d492b9b999c5dad2a1d8a85036ff664e"
+}

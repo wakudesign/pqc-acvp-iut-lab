@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-07-15",
+  "module": "mldsa-native pure/external ACVP adapter",
+  "scopeDecision": "docs/adr/0002-mldsa-v1-scope.md",
+  "parameterSets": ["ML-DSA-44", "ML-DSA-65", "ML-DSA-87"],
+  "operations": ["keyGen", "sigGen", "sigVer"],
+  "signingModes": ["deterministic", "hedged"],
+  "interface": "external",
+  "signatureType": "pure",
+  "sourceHashes": {
+    "src/pqc_acvp/mldsa.py": "4b2813a01e1c3eefdf89765c1160ce1efa2be248a4647e0405d3ef9cf764b782",
+    "src/pqc_acvp/backends/mldsa_native.py": "3c5132a006980f07937c90b308d95cd5817aefb75b6015d53bd06d178ef16e36",
+    "backends/mldsa-native/mldsa_native_bridge.c": "fc5d9b60d8de4d8b9c00e838aeda351a1a9a4234c69fd548b6c04b50c44e55d1",
+    "tests/unit/test_mldsa_contract.py": "cf8ec13923957fd8f973b24d4d02d07a31a1b644f1aa0b7fc03f8f886e899806",
+    "tests/integration/test_mldsa_native_backend.py": "76c16231a546db46685fb0e8d6ebab92c00aec4739775437f980e90a80ce87d6"
+  },
+  "buildBinding": {
+    "manifest": "evidence/build/mldsa-native-portable.json",
+    "bridgeSha256": "f218ca8b9bdb8276408abe19c74aae1614176b55f33829402c83b38848b6bc9c",
+    "bridgeZeroizeSelfTestPassed": true,
+    "repeatBuildMatched": true
+  },
+  "tests": {
+    "adapterFocused": {"count": 18, "passed": 18},
+    "fullRepository": {"count": 66, "passed": 66},
+    "coverageClaims": [
+      "all parameter-set key, secret-key and signature sizes",
+      "deterministic signature repeatability",
+      "ACVP-supplied hedged randomness mapping",
+      "empty and 255-byte context handling",
+      "1-byte and 8192-byte message boundaries",
+      "positive signature verification",
+      "same-length invalid signature returns false",
+      "malformed signature is invalid input",
+      "unsupported capability rejected before native invocation",
+      "bridge artifact hash and build gates enforced"
+    ]
+  },
+  "securityBoundaries": {
+    "secretsPassedInArgv": false,
+    "callerSuppliedRndIsValidationOnly": true,
+    "productionRandombytesFailsClosed": true,
+    "workingBuffersClearedBeforeExit": true,
+    "invalidSignatureIsNotExecutionError": true
+  },
+  "containsCredentials": false,
+  "containsAcvtsIdentifiers": false,
+  "containsRawSecrets": false,
+  "passed": true
+}

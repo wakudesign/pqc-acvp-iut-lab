@@ -1,0 +1,83 @@
+{
+  "artifacts": {
+    "libmldsa.a": {
+      "sha256": "9499bfb6131316c136faefbb6ff860b3166e13ddc02591936202a6fe3cee53eb",
+      "size": 197784
+    },
+    "mldsa_native_bridge": {
+      "sha256": "f218ca8b9bdb8276408abe19c74aae1614176b55f33829402c83b38848b6bc9c",
+      "size": 203888
+    },
+    "test_binary": {
+      "sha256": "c0ce99f9045b50bda49fa85023a94ff6c22e46605426334c3bc22b7c27a7ede8",
+      "size": 237064
+    }
+  },
+  "bridgeSourceSha256": "fc5d9b60d8de4d8b9c00e838aeda351a1a9a4234c69fd548b6c04b50c44e55d1",
+  "bridgeZeroizeSelfTestPassed": true,
+  "configuration": {
+    "MLD_CONFIG_MULTILEVEL_BUILD": true,
+    "MLD_CONFIG_USE_NATIVE_BACKEND_ARITH": false,
+    "MLD_CONFIG_USE_NATIVE_BACKEND_FIPS202": false,
+    "ZERO_AR_DATE": "1",
+    "nativeAssemblyCompiled": false,
+    "testOnlyRngLinkedOnlyIntoSmokeBinary": true
+  },
+  "credentialsRequired": false,
+  "dependency": {
+    "archiveSha256": "71349c89af30e58370ea900e1c86b80cc3fa648a301f891ba5f96edb4e798a0b",
+    "commit": "9b0ee84f4cf399043eca59eca4e5f8531ca1d61b",
+    "dependencyMethod": "pinned-download",
+    "localPatches": [],
+    "name": "mldsa-native",
+    "prerelease": true,
+    "release": "v1.0.0-beta2",
+    "selectedSourceLicense": "Apache-2.0",
+    "sourceLicenseExpression": "Apache-2.0 OR ISC OR MIT"
+  },
+  "nativeSymbolScanPassed": true,
+  "networkRequiredAfterFetch": false,
+  "parameterSets": [
+    "ML-DSA-44",
+    "ML-DSA-65",
+    "ML-DSA-87"
+  ],
+  "profile": "portable-c-monolithic-multilevel",
+  "repeatBuildMatched": true,
+  "schemaVersion": 1,
+  "smokeTestParameterSets": [
+    "ML-DSA-44",
+    "ML-DSA-65",
+    "ML-DSA-87"
+  ],
+  "smokeTestPassed": true,
+  "toolchain": {
+    "archiver": "ar",
+    "archiverVersion": "usage:  ar -d [-TLsv] archive file ...",
+    "compiler": "cc",
+    "compilerFlags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror=unused-result",
+      "-Wpedantic",
+      "-Werror",
+      "-Wmissing-prototypes",
+      "-Wshadow",
+      "-Wpointer-arith",
+      "-Wredundant-decls",
+      "-Wconversion",
+      "-Wsign-conversion",
+      "-Wno-long-long",
+      "-Wno-unknown-pragmas",
+      "-Wno-unused-command-line-argument",
+      "-O3",
+      "-fomit-frame-pointer",
+      "-std=c99",
+      "-pedantic",
+      "-MMD"
+    ],
+    "compilerVersion": "Apple clang version 21.0.0 (clang-2100.0.123.102)",
+    "target": "arm64-apple-darwin25.5.0"
+  },
+  "upstreamBuildRecipeSha256": "ff27c4994740826d514629764f544a0075d7bab29a351e8692c5a250e7f9f9de"
+}

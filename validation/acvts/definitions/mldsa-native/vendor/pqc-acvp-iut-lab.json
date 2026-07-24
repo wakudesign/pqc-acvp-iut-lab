@@ -1,0 +1,15 @@
+{
+  "vendorName": "pqc-acvp-iut-lab",
+  "vendorUrl": "https://example.invalid/pqc-acvp-iut-lab",
+  "contactName": "Portfolio lab owner",
+  "contactEmail": "portfolio@example.invalid",
+  "contactPhone": "+1-000-000-0000",
+  "addressStreet": "N/A",
+  "addressCity": "N/A",
+  "addressState": "N/A",
+  "addressCountry": "USA",
+  "addressZip": "00000",
+  "acvpVendorId": 0,
+  "acvpAddressId": 0,
+  "acvpPersonId": 0
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "scope": "T01 common ACVP framework completion",
+  "passed": true,
+  "credentialsRequired": false,
+  "networkRequired": false,
+  "checks": {
+    "offlinePQCleanBaseline": {
+      "passed": true,
+      "testsRun": 240,
+      "byteIdentical": true,
+      "report": "common-framework-baseline.json"
+    },
+    "credentialFreeTests": {
+      "passed": true,
+      "testsRun": 36,
+      "cleanEnvironmentRun": true,
+      "workflow": "../../.github/workflows/credential-free-tests.yml",
+      "remoteRunObserved": false,
+      "remoteRunNote": "Workflow is configured; a remote run can exist only after the repository is pushed."
+    },
+    "backendBoundary": {
+      "passed": true,
+      "networkClientImports": 0,
+      "sessionLifecycleSymbolReferences": 0,
+      "enforcedBy": "../../tests/unit/test_architecture_boundaries.py"
+    },
+    "architectureDecision": {
+      "status": "Accepted",
+      "record": "../../docs/adr/0001-keep-common-framework-in-lab.md"
+    }
+  }
+}

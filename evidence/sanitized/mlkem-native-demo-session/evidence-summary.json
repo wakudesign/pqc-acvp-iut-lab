@@ -1,0 +1,86 @@
+{
+  "algorithm": "ML-KEM",
+  "backend": {
+    "commit": "0ba906cb14b1c241476134d7403a811b382ca498",
+    "compiler": "cc: Apple clang version 21.0.0 (clang-2100.0.123.102)",
+    "flags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror=unused-result",
+      "-Wpedantic",
+      "-Werror",
+      "-Wmissing-prototypes",
+      "-Wshadow",
+      "-Wpointer-arith",
+      "-Wredundant-decls",
+      "-Wconversion",
+      "-Wsign-conversion",
+      "-Wno-long-long",
+      "-Wno-unknown-pragmas",
+      "-Wno-unused-command-line-argument",
+      "-O3",
+      "-fomit-frame-pointer",
+      "-std=c99",
+      "-pedantic",
+      "-MMD",
+      "-Wno-redundant-decls",
+      "MLK_CONFIG_MULTILEVEL_BUILD=1",
+      "MLK_CONFIG_USE_NATIVE_BACKEND_ARITH=0",
+      "MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202=0",
+      "ZERO_AR_DATE=1"
+    ],
+    "name": "mlkem-native",
+    "target": "arm64-apple-darwin25.5.0",
+    "version": "v1.2.0"
+  },
+  "claim": "ACVTS Demo responses passed and are reproducible offline",
+  "claimLimitations": [
+    "Not a CAVP certificate",
+    "Not a CMVP module validation",
+    "Raw vectors and server identifiers are not included"
+  ],
+  "passedTests": 240,
+  "revision": "FIPS203",
+  "schemaVersion": 1,
+  "serverEnvironment": "NIST ACVTS Demo",
+  "sessionAlias": "mlkem-native-demo-session",
+  "sessionDisposition": "passed",
+  "totalTests": 240,
+  "vectors": [
+    {
+      "alias": "mlkem-native-keygen",
+      "disposition": "passed",
+      "functions": [
+        "keyGen"
+      ],
+      "groups": 3,
+      "mode": "keyGen",
+      "parameterSets": [
+        "ML-KEM-1024",
+        "ML-KEM-512",
+        "ML-KEM-768"
+      ],
+      "passedTests": 75,
+      "tests": 75
+    },
+    {
+      "alias": "mlkem-native-encap-decap",
+      "disposition": "passed",
+      "functions": [
+        "decapsulation",
+        "decapsulationKeyCheck",
+        "encapsulation",
+        "encapsulationKeyCheck"
+      ],
+      "groups": 12,
+      "mode": "encapDecap",
+      "parameterSets": [
+        "ML-KEM-1024",
+        "ML-KEM-512",
+        "ML-KEM-768"
+      ],
+      "passedTests": 165,
+      "tests": 165
+    }
+  ]
+}

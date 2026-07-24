@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "name": "mldsa-native",
+  "repository": "https://github.com/pq-code-package/mldsa-native",
+  "release": "v1.0.0-beta2",
+  "prerelease": true,
+  "commit": "9b0ee84f4cf399043eca59eca4e5f8531ca1d61b",
+  "archiveUrl": "https://github.com/pq-code-package/mldsa-native/archive/9b0ee84f4cf399043eca59eca4e5f8531ca1d61b.tar.gz",
+  "archiveSha256": "71349c89af30e58370ea900e1c86b80cc3fa648a301f891ba5f96edb4e798a0b",
+  "archiveRoot": "mldsa-native-9b0ee84f4cf399043eca59eca4e5f8531ca1d61b",
+  "dependencyMethod": "pinned-download",
+  "localPatches": [],
+  "sourceLicenseExpression": "Apache-2.0 OR ISC OR MIT",
+  "selectedSourceLicense": "Apache-2.0"
+}

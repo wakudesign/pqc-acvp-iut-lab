@@ -1,0 +1,17 @@
+{
+  "sessionAlias": "baseline-session",
+  "vectors": [
+    {
+      "alias": "mlkem-keygen",
+      "requestSha256": "44a19e31e6e41e5f678845e2210ec7e2c64743b4674a23f5cf61e7c055770f30",
+      "responseSha256": "e7721f4f1d46f2a3120ed6ba01e31e218fb708258053ea16f89d1c8c1f219e33",
+      "verdictSha256": "7710241efe26b4ce88f15cd9ef0f0906a9cebd13aac7824139d652b9e20e56ce"
+    },
+    {
+      "alias": "mlkem-encap-decap",
+      "requestSha256": "45d44ec84ce1e76f22a3c04b6c58297634d6a83ed7db1b5e52a355ea5a8c1f3c",
+      "responseSha256": "6b1452d0e653eae68c153b36af4efe0e5e4e480f2054e9198a2797f865cbd319",
+      "verdictSha256": "2764769897f4b772cf1dc9a5f48eab963bd087fa5dec7b3001dff1cc63b9f8ca"
+    }
+  ]
+}

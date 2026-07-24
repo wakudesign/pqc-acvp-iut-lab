@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "scope": "mlkem-native Validation",
+  "backend": {
+    "name": "mlkem-native",
+    "release": "v1.2.0",
+    "commit": "0ba906cb14b1c241476134d7403a811b382ca498",
+    "profile": "portable multilevel C"
+  },
+  "checks": {
+    "upstreamOfflineAcvp": {
+      "tests": 240,
+      "passed": true
+    },
+    "commonFixtureReplay": {
+      "tests": 240,
+      "passed": true
+    },
+    "pqcleanDifferential": {
+      "tests": 240,
+      "semanticIdentical": true,
+      "byteIdentical": true,
+      "passed": true
+    },
+    "negativeAndCapabilityTests": {
+      "fullSuiteTests": 48,
+      "invalidKey": true,
+      "invalidCiphertext": true,
+      "wrongSizes": true,
+      "unsupportedCapability": true,
+      "passed": true
+    },
+    "registrationPreview": {
+      "modes": ["keyGen", "encapDecap"],
+      "parameterSets": ["ML-KEM-512", "ML-KEM-768", "ML-KEM-1024"],
+      "matchesBackendCapabilities": true,
+      "passed": true
+    },
+    "nistAcvtsDemo": {
+      "validationLevel": "NIST ACVTS Demo",
+      "modes": {
+        "keyGen": 75,
+        "encapDecap": 165
+      },
+      "totalTests": 240,
+      "sessionDisposition": "passed",
+      "rawSessionIdentifiersIncluded": false,
+      "rawVectorsIncluded": false,
+      "credentialsIncluded": false,
+      "passed": true
+    },
+    "sanitizedEvidence": {
+      "filesScanned": 4,
+      "automatedFindings": 0,
+      "checksumsVerified": true,
+      "humanReview": "pending",
+      "finalGitIndexScan": "pending",
+      "releaseArchiveScan": "pending",
+      "passed": false
+    }
+  },
+  "claimLimitations": [
+    "The NIST result is from ACVTS Demo and is not a CAVP certificate.",
+    "It is not a CMVP module validation.",
+    "The quality gate remains incomplete until owner review and final-tree scans pass."
+  ],
+  "validationChecksPassed": true,
+  "releaseReady": false
+}

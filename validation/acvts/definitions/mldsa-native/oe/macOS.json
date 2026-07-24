@@ -1,0 +1,13 @@
+{
+  "oeEnvName": "macOS",
+  "cpe": "cpe:2.3:o:apple:macOS:*:*:*:*:*:*:*:*:*",
+  "manufacturer": "Apple",
+  "procFamily": "ARM64",
+  "procName": "Apple Silicon",
+  "procSeries": "Apple Silicon",
+  "features": 0,
+  "envType": 0,
+  "acvpOeId": 0,
+  "acvpOeDepProcId": 0,
+  "acvpOeDepSwId": 0
+}

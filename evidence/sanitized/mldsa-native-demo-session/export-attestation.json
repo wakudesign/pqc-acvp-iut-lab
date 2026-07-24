@@ -1,0 +1,13 @@
+{
+  "credentialsRequired": false,
+  "exporter": "tools/export_evidence.py",
+  "exporterVersion": "0.1.0",
+  "humanReview": "approved",
+  "humanReviewedAt": "2026-07-24T08:24:26Z",
+  "humanReviewer": "JunMin765677",
+  "reviewedTreeSha256": "61fbff0946d57a8c26f4dde30e66b75290becc46f4dc3599c506535a0bfe9aed",
+  "policySha256": "dede38ba7782de77215ebc1a04cbd3d5610e1ae1e652821e574b09e2045b58bf",
+  "rawVectorsIncluded": false,
+  "schemaVersion": 1,
+  "sourceHashesSha256": "1da266d02325e339a5152b0d86cdd4f4fa3d5080be6cc753a2d57e28cf36cfff"
+}

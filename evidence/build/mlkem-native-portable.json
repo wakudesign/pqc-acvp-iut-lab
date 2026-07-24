@@ -1,0 +1,76 @@
+{
+  "artifacts": {
+    "libmlkem.a": {
+      "sha256": "70c04d46a657c96ab1030ce00b4a0403de1553fbc4236c5e668edf9e3afd7158",
+      "size": 275928
+    },
+    "mlkem_native_bridge": {
+      "sha256": "0e8e0d946164f6bbfb37a62d5e92f3df36118c6c5e0a8416f19b40592311cadc",
+      "size": 272704
+    },
+    "test_binary": {
+      "sha256": "314c21c8d5278caf1ca9bb246c2da15aa4cde49f80e9bd076226d382cdd5747b",
+      "size": 272424
+    }
+  },
+  "bridgeSourceSha256": "1421b4f282fa1f7d443077b1d3e592d5e3c095b6cd9065b525e154dff9df4c7c",
+  "bridgeZeroizeSelfTestPassed": true,
+  "configuration": {
+    "MLK_CONFIG_MULTILEVEL_BUILD": true,
+    "MLK_CONFIG_USE_NATIVE_BACKEND_ARITH": false,
+    "MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202": false,
+    "ZERO_AR_DATE": "1",
+    "testOnlyRngLinkedOnlyIntoSmokeBinary": true
+  },
+  "credentialsRequired": false,
+  "dependency": {
+    "archiveSha256": "f1975616b99c86819fb959803b090370d206d2b5fc9639146b79ce846864d677",
+    "commit": "0ba906cb14b1c241476134d7403a811b382ca498",
+    "dependencyMethod": "pinned-download",
+    "localPatches": [],
+    "name": "mlkem-native",
+    "release": "v1.2.0",
+    "selectedSourceLicense": "Apache-2.0",
+    "sourceLicenseExpression": "Apache-2.0 OR ISC OR MIT"
+  },
+  "networkRequiredAfterFetch": false,
+  "parameterSets": [
+    "ML-KEM-512",
+    "ML-KEM-768",
+    "ML-KEM-1024"
+  ],
+  "profile": "portable-c-multilevel",
+  "repeatBuildMatched": true,
+  "schemaVersion": 1,
+  "smokeTestPassed": true,
+  "toolchain": {
+    "archiver": "ar",
+    "archiverVersion": "usage:  ar -d [-TLsv] archive file ...",
+    "compiler": "cc",
+    "compilerFlags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror=unused-result",
+      "-Wpedantic",
+      "-Werror",
+      "-Wmissing-prototypes",
+      "-Wshadow",
+      "-Wpointer-arith",
+      "-Wredundant-decls",
+      "-Wconversion",
+      "-Wsign-conversion",
+      "-Wno-long-long",
+      "-Wno-unknown-pragmas",
+      "-Wno-unused-command-line-argument",
+      "-O3",
+      "-fomit-frame-pointer",
+      "-std=c99",
+      "-pedantic",
+      "-MMD",
+      "-Wno-redundant-decls"
+    ],
+    "compilerVersion": "Apple clang version 21.0.0 (clang-2100.0.123.102)",
+    "target": "arm64-apple-darwin25.5.0"
+  },
+  "upstreamBuildRecipeSha256": "879df6dd26a383709805dd627aa65d9c8384986c61ef689a2417493112ed84e4"
+}

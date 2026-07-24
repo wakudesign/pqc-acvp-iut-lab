@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "name": "mlkem-native",
+  "repository": "https://github.com/pq-code-package/mlkem-native",
+  "release": "v1.2.0",
+  "commit": "0ba906cb14b1c241476134d7403a811b382ca498",
+  "archiveUrl": "https://github.com/pq-code-package/mlkem-native/archive/0ba906cb14b1c241476134d7403a811b382ca498.tar.gz",
+  "archiveSha256": "f1975616b99c86819fb959803b090370d206d2b5fc9639146b79ce846864d677",
+  "archiveRoot": "mlkem-native-0ba906cb14b1c241476134d7403a811b382ca498",
+  "dependencyMethod": "pinned-download",
+  "localPatches": [],
+  "sourceLicenseExpression": "Apache-2.0 OR ISC OR MIT",
+  "selectedSourceLicense": "Apache-2.0"
+}

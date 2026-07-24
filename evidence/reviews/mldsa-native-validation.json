@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "scope": "mldsa-native Validation",
+  "checks": {
+    "upstreamPublicAcvp": {
+      "groups": 39,
+      "tests": 615,
+      "passed": true
+    },
+    "declaredScopeOfficialReplay": {
+      "groups": 12,
+      "tests": 210,
+      "keyGen": 75,
+      "sigGen": 90,
+      "sigVer": 45,
+      "matchesExpectedResults": true,
+      "passed": true
+    },
+    "negativeSchemaAndRunnerTests": {
+      "fullSuiteTests": 71,
+      "malformedKey": true,
+      "malformedSignature": true,
+      "malformedContext": true,
+      "malformedRandomness": true,
+      "unsupportedMode": true,
+      "unsupportedPreHash": true,
+      "unsupportedInternalInterface": true,
+      "noPartialResponseOnFailure": true,
+      "passed": true
+    },
+    "registrationPreview": {
+      "algorithms": 3,
+      "modes": ["keyGen", "sigGen", "sigVer"],
+      "parameterSets": ["ML-DSA-44", "ML-DSA-65", "ML-DSA-87"],
+      "signatureInterface": "external only",
+      "preHash": "pure only",
+      "matchesDecisionRecord": true,
+      "passed": true
+    },
+    "nistAcvtsDemo": {
+      "validationLevel": "NIST ACVTS Demo",
+      "keyGen": 75,
+      "sigGen": 90,
+      "sigVer": 45,
+      "totalTests": 210,
+      "sessionDisposition": "passed",
+      "rawSessionIdentifiersIncluded": false,
+      "rawVectorsIncluded": false,
+      "credentialsIncluded": false,
+      "passed": true
+    },
+    "sanitizedEvidence": {
+      "filesScanned": 4,
+      "automatedFindings": 0,
+      "checksumsVerified": true,
+      "humanReview": "approved",
+      "humanReviewer": "JunMin765677",
+      "humanReviewedAt": "2026-07-24T08:24:26Z",
+      "passed": true
+    }
+  },
+  "claimLimitations": [
+    "The NIST result is from ACVTS Demo and is not a CAVP certificate.",
+    "It is not a CMVP module validation.",
+    "HashML-DSA, internal interface and externalMu are not declared by v1.",
+    "Owner review is approved; remote CI, final release-tree review, tag and GitHub release remain outstanding."
+  ],
+  "validationChecksPassed": true,
+  "releaseReady": false
+}

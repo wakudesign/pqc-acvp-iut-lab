@@ -1,0 +1,98 @@
+{
+  "algorithm": "ML-DSA",
+  "backend": {
+    "commit": "9b0ee84f4cf399043eca59eca4e5f8531ca1d61b",
+    "compiler": "cc: Apple clang version 21.0.0 (clang-2100.0.123.102)",
+    "flags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror=unused-result",
+      "-Wpedantic",
+      "-Werror",
+      "-Wmissing-prototypes",
+      "-Wshadow",
+      "-Wpointer-arith",
+      "-Wredundant-decls",
+      "-Wconversion",
+      "-Wsign-conversion",
+      "-Wno-long-long",
+      "-Wno-unknown-pragmas",
+      "-Wno-unused-command-line-argument",
+      "-O3",
+      "-fomit-frame-pointer",
+      "-std=c99",
+      "-pedantic",
+      "-MMD",
+      "MLD_CONFIG_MULTILEVEL_BUILD=1",
+      "MLD_CONFIG_USE_NATIVE_BACKEND_ARITH=0",
+      "MLD_CONFIG_USE_NATIVE_BACKEND_FIPS202=0",
+      "ZERO_AR_DATE=1"
+    ],
+    "name": "mldsa-native",
+    "target": "arm64-apple-darwin25.5.0",
+    "version": "v1.0.0-beta2"
+  },
+  "claim": "ACVTS Demo responses passed and are reproducible offline",
+  "claimLimitations": [
+    "Not a CAVP certificate",
+    "Not a CMVP module validation",
+    "Raw vectors and server identifiers are not included"
+  ],
+  "passedTests": 210,
+  "revision": "FIPS204",
+  "schemaVersion": 1,
+  "serverEnvironment": "NIST ACVTS Demo",
+  "sessionAlias": "mldsa-native-demo-session",
+  "sessionDisposition": "passed",
+  "totalTests": 210,
+  "vectors": [
+    {
+      "alias": "mldsa-native-keygen",
+      "disposition": "passed",
+      "functions": [
+        "keyGen"
+      ],
+      "groups": 3,
+      "mode": "keyGen",
+      "parameterSets": [
+        "ML-DSA-44",
+        "ML-DSA-65",
+        "ML-DSA-87"
+      ],
+      "passedTests": 75,
+      "tests": 75
+    },
+    {
+      "alias": "mldsa-native-siggen-pure-external",
+      "disposition": "passed",
+      "functions": [
+        "sigGen"
+      ],
+      "groups": 6,
+      "mode": "sigGen",
+      "parameterSets": [
+        "ML-DSA-44",
+        "ML-DSA-65",
+        "ML-DSA-87"
+      ],
+      "passedTests": 90,
+      "tests": 90
+    },
+    {
+      "alias": "mldsa-native-sigver-pure-external",
+      "disposition": "passed",
+      "functions": [
+        "sigVer"
+      ],
+      "groups": 3,
+      "mode": "sigVer",
+      "parameterSets": [
+        "ML-DSA-44",
+        "ML-DSA-65",
+        "ML-DSA-87"
+      ],
+      "passedTests": 45,
+      "tests": 45
+    }
+  ]
+}

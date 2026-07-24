@@ -1,0 +1,48 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Credentials and ACVP client state
+secure-datastore/
+key/
+secrets/
+acvpproxy_conf.json
+*jwt*
+*totp*
+*authorization*
+*.p12
+*.pfx
+*.pkcs12
+*.key
+*private*.pem
+
+# Raw validation evidence: export through the allowlist pipeline
+testvectors/
+genval-runs/
+evidence/raw/
+
+# Build and dependency output
+.deps/
+bin/
+build/
+!evidence/build/
+!evidence/build/*.json
+dist/
+out/
+target/
+node_modules/
+__pycache__/
+*.pyc
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Logs and local reports
+*.log
+coverage/
+.coverage
+.pytest_cache/

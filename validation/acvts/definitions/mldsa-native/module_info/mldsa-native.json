@@ -1,0 +1,12 @@
+{
+  "moduleName": "mldsa-native",
+  "moduleVersion": "v1.0.0-beta2-portfolio.1",
+  "moduleDescription": "Portable mldsa-native integration for ACVP ML-DSA validation.",
+  "moduleType": 0,
+  "acvpModuleIds": [
+    {
+      "acvpModuleName": "mldsa-native (pure external)",
+      "acvpModuleId": 0
+    }
+  ]
+}

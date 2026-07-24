@@ -1,0 +1,23 @@
+{
+  "sessionAlias": "mldsa-native-demo-session",
+  "vectors": [
+    {
+      "alias": "mldsa-native-keygen",
+      "requestSha256": "853925e51ac7e35fcfb2de756e740d1542ab7b875e5e8eb3dbce6f79f8c10398",
+      "responseSha256": "e1832ce33e34225167e67b1ac27c1b81fba914fad82e22c67734712d9912f70d",
+      "verdictSha256": "9e79f2eff5e9e3705144a1bed01d8a4ebd15671cd6ea083e213cb13e2dca2615"
+    },
+    {
+      "alias": "mldsa-native-siggen-pure-external",
+      "requestSha256": "f2ea17f498c46ade0c8637f5f7004e1f6edcb152accb027ed973c508f279aae0",
+      "responseSha256": "194c21490a5be8d20405087f32350cabc88926ca6c94cb9111e0273917cfc425",
+      "verdictSha256": "23b39a30a1432162dcc50da0be99e4afbe1b4e9e1f6753cfd7bcb89a1ec6e614"
+    },
+    {
+      "alias": "mldsa-native-sigver-pure-external",
+      "requestSha256": "8bd894f1ce99a98a2734c4b789b693f6800f94b55440c53d27ee6bee9ec9cf06",
+      "responseSha256": "2e286536e52307235f4240b0cada661bcab644dfc2856943266fd8c95c75ea5c",
+      "verdictSha256": "e5ade7a2c4fc2974524bedcd26e898fd92e44e1a9112764e4a4f14c1cf0e3c2c"
+    }
+  ]
+}

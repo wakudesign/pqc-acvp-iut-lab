@@ -1,0 +1,9 @@
+{
+  "bytesScanned": 2529,
+  "filesScanned": 4,
+  "findings": [],
+  "passed": true,
+  "rootLabel": "baseline-session",
+  "scanner": "tools/check_public_tree.py",
+  "schemaVersion": 1
+}

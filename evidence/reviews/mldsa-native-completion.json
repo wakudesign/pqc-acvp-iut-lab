@@ -1,0 +1,75 @@
+{
+  "claimLimitations": [
+    "ACVTS Demo is not a CAVP certificate and is not CMVP module validation.",
+    "HashML-DSA, internal interface and externalMu remain outside v1 scope.",
+    "A configured workflow is not a remote CI run until the repository is pushed.",
+    "Owner evidence approval does not mean the v1.1 tag, remote CI run or GitHub release already exists."
+  ],
+  "completionCriteria": {
+    "nistAcvtsDemo": {
+      "modeTests": {
+        "keyGen": 75,
+        "sigGen": 90,
+        "sigVer": 45
+      },
+      "parameterSets": [
+        "ML-DSA-44",
+        "ML-DSA-65",
+        "ML-DSA-87"
+      ],
+      "passed": true,
+      "rawServerIdentifiersIncluded": false,
+      "sessionDisposition": "passed",
+      "totalTests": 210,
+      "validationLevel": "NIST ACVTS Demo"
+    },
+    "offlineEvidenceAndCiReplay": {
+      "credentialsRequired": false,
+      "passed": true,
+      "publicVectorsPinnedByHash": true,
+      "rawVectorsCommitted": false,
+      "sanitizedChecksumsVerified": true,
+      "workflow": ".github/workflows/credential-free-tests.yml",
+      "workflowBuildsPinnedBackend": true,
+      "workflowRunObserved": false,
+      "workflowRunsUpstreamAndPortfolioReplay": true
+    },
+    "sameRunnerDeclaredCoverage": {
+      "algorithm": "ML-DSA",
+      "matchesOfficialExpectedResults": true,
+      "modeTests": {
+        "keyGen": 75,
+        "sigGen": 90,
+        "sigVer": 45
+      },
+      "parameterSets": [
+        "ML-DSA-44",
+        "ML-DSA-65",
+        "ML-DSA-87"
+      ],
+      "passed": true,
+      "revision": "FIPS204",
+      "runner": "pqc_acvp.mldsa_runner",
+      "totalTests": 210
+    },
+    "v1_1Release": {
+      "blockers": [
+        "Git repository has no configured remote",
+        "v1.1 tag and GitHub release have not been created"
+      ],
+      "gitRepositoryPresent": true,
+      "githubReleaseObserved": false,
+      "localV1_1TagPresent": false,
+      "ownerEvidenceReview": "approved",
+      "ownerEvidenceReviewApproved": true,
+      "published": false,
+      "remoteCiRunObserved": false,
+      "remoteConfigured": false
+    }
+  },
+  "publicReleaseApproved": true,
+  "releasePublished": false,
+  "schemaVersion": 1,
+  "scope": "T03 mldsa-native completion evidence",
+  "technicalCompletionPassed": true
+}

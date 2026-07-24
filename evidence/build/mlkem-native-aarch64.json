@@ -1,0 +1,93 @@
+{
+  "artifacts": {
+    "libmlkem.a": {
+      "sha256": "af1632a572bf374a5cb6d1bd0e18c5c4b13e6e4565930958a52f92cda467e95f",
+      "size": 186240
+    },
+    "mlkem_native_bridge": {
+      "sha256": "1a686695fe6a6908e925d7ca4eb8839d01d9e59b929172fd961639fbb9ab27e9",
+      "size": 109136
+    }
+  },
+  "bridgeSourceSha256": "1421b4f282fa1f7d443077b1d3e592d5e3c095b6cd9065b525e154dff9df4c7c",
+  "bridgeZeroizeSelfTestPassed": true,
+  "configuration": {
+    "MLK_CONFIG_MULTILEVEL_BUILD": true,
+    "MLK_CONFIG_USE_NATIVE_BACKEND_ARITH": true,
+    "MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202": true,
+    "MLK_FORCE_AARCH64": true,
+    "ZERO_AR_DATE": "1"
+  },
+  "credentialsRequired": false,
+  "dependency": {
+    "archiveSha256": "f1975616b99c86819fb959803b090370d206d2b5fc9639146b79ce846864d677",
+    "commit": "0ba906cb14b1c241476134d7403a811b382ca498",
+    "dependencyMethod": "pinned-download",
+    "localPatches": [],
+    "name": "mlkem-native",
+    "release": "v1.2.0",
+    "selectedSourceLicense": "Apache-2.0",
+    "sourceLicenseExpression": "Apache-2.0 OR ISC OR MIT"
+  },
+  "featureDetection": {
+    "compilerDefinesArmFeatureSha3ByDefault": true,
+    "compilerSupportsArmv84Sha3": true,
+    "hostProbeKey": "hw.optional.armv8_2_sha3",
+    "hostReportedArmv82Sha3": false,
+    "sha3EnablementSource": "compiler predefined __ARM_FEATURE_SHA3",
+    "sha3InstructionsEnabled": true
+  },
+  "nativeBackend": {
+    "aarch64ArithmeticAssemblyPresent": true,
+    "aarch64Fips202AssemblyPresent": true,
+    "arithmeticBackend": "AArch64/NEON assembly",
+    "fips202Backend": "AArch64 SHA3-instruction assembly",
+    "optionalCpuFeatures": [],
+    "requiredCpuFeatures": [
+      "AArch64 little-endian",
+      "Advanced SIMD (NEON)",
+      "Armv8.4-A SHA3 instructions"
+    ]
+  },
+  "networkRequiredAfterFetch": false,
+  "parameterSets": [
+    "ML-KEM-512",
+    "ML-KEM-768",
+    "ML-KEM-1024"
+  ],
+  "profile": "aarch64-native-multilevel",
+  "repeatBuildMatched": true,
+  "schemaVersion": 1,
+  "smokeTestPassed": true,
+  "toolchain": {
+    "archiver": "ar",
+    "archiverVersion": "usage:  ar -d [-TLsv] archive file ...",
+    "compiler": "cc",
+    "compilerFlags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror=unused-result",
+      "-Wpedantic",
+      "-Werror",
+      "-Wmissing-prototypes",
+      "-Wshadow",
+      "-Wpointer-arith",
+      "-Wredundant-decls",
+      "-Wconversion",
+      "-Wsign-conversion",
+      "-Wno-long-long",
+      "-Wno-unknown-pragmas",
+      "-Wno-unused-command-line-argument",
+      "-O3",
+      "-fomit-frame-pointer",
+      "-std=c99",
+      "-pedantic",
+      "-MMD",
+      "-Wno-redundant-decls",
+      "-DMLK_FORCE_AARCH64"
+    ],
+    "compilerVersion": "Apple clang version 21.0.0 (clang-2100.0.123.102)",
+    "target": "arm64-apple-darwin25.5.0"
+  },
+  "upstreamBuildRecipeSha256": "f691116b85aca3a233a783a9f560d6a1daa2adf876b8795bbcd97b9a1c9969e1"
+}

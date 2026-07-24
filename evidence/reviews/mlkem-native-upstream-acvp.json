@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "validationLevel": "upstream offline ACVP sample vectors",
+  "dependency": {
+    "name": "mlkem-native",
+    "release": "v1.2.0",
+    "commit": "0ba906cb14b1c241476134d7403a811b382ca498"
+  },
+  "command": "make OPT=0 run_acvp",
+  "acvpServerVectorVersion": "v1.1.0.41",
+  "profile": "portable C (OPT=0)",
+  "vectors": [
+    {
+      "mode": "keyGen",
+      "tests": 75,
+      "promptSha256": "6595dc36f6afa1af45b1582a193955867f08521a479c050ecd96844f120a113d",
+      "expectedResultsSha256": "a0022a17a73065bc90a97a6ab35925e0f21aa7d96c35d5b18cabbfeb53883367",
+      "passed": true
+    },
+    {
+      "mode": "encapDecap",
+      "tests": 165,
+      "promptSha256": "1f2424abc10894b7d5cadc1c5d18e591730b2f6464ab0abcceb8d69cf6c45df6",
+      "expectedResultsSha256": "a19eb5654b402b6eeac93b7f9311b688cd156b7443d8e4752d4a2d23d864907d",
+      "passed": true
+    }
+  ],
+  "totalTests": 240,
+  "credentialsRequired": false,
+  "networkRequiredAfterVectorFetch": false,
+  "passed": true
+}
+

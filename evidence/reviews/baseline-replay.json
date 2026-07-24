@@ -1,0 +1,31 @@
+{
+  "cleanBuild": true,
+  "cleanBuildBinarySha256": {
+    "mlkem_decap_once": "966a159677c38f29d57379bd9721d0bf4035840291e96eae2366422094633d56",
+    "mlkem_encap_once": "c08f97d5aa708a204c5dadd1cb33f2961967711cc2754036dfad4bbda1aafb5c",
+    "mlkem_keygen_once": "621a05d48e6ae9c66ae73a961f9d054028b211f108f37545adf84f6aed10ace4"
+  },
+  "credentialsRequired": false,
+  "networkRequired": false,
+  "passed": true,
+  "replay": "internal-exact-baseline",
+  "schemaVersion": 1,
+  "secureDatastoreRequired": false,
+  "totalTests": 240,
+  "vectors": [
+    {
+      "alias": "mlkem-keygen",
+      "byteIdentical": true,
+      "mode": "keyGen",
+      "responseSha256": "e7721f4f1d46f2a3120ed6ba01e31e218fb708258053ea16f89d1c8c1f219e33",
+      "tests": 75
+    },
+    {
+      "alias": "mlkem-encap-decap",
+      "byteIdentical": true,
+      "mode": "encapDecap",
+      "responseSha256": "6b1452d0e653eae68c153b36af4efe0e5e4e480f2054e9198a2797f865cbd319",
+      "tests": 165
+    }
+  ]
+}

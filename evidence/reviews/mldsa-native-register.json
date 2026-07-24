@@ -1,0 +1,31 @@
+{
+  "algorithmCount": 3,
+  "checks": {
+    "allParameterSets": true,
+    "bothSigningVariants": true,
+    "contextRange": true,
+    "exactModes": true,
+    "exactlyThreeAlgorithms": true,
+    "externalOnly": true,
+    "messageRange": true,
+    "noHashAlgorithms": true,
+    "noInternalOrExternalMu": true,
+    "pureOnly": true
+  },
+  "declaredScope": "FIPS204 pure/external ML-DSA v1",
+  "modes": [
+    "keyGen",
+    "sigGen",
+    "sigVer"
+  ],
+  "parameterSets": [
+    "ML-DSA-44",
+    "ML-DSA-65",
+    "ML-DSA-87"
+  ],
+  "passed": true,
+  "rawRegistrationIncluded": false,
+  "rawSessionIdentifiersIncluded": false,
+  "review": "acvpproxy --dump-register capability review",
+  "schemaVersion": 1
+}

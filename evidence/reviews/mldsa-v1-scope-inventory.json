@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-07-15",
+  "decisionRecord": "docs/adr/0002-mldsa-v1-scope.md",
+  "legacyBaseline": {
+    "root": "PQClean/iut_mldsa",
+    "implementedModes": ["keyGen"],
+    "parameterSets": ["ML-DSA-44", "ML-DSA-65", "ML-DSA-87"],
+    "binaryInterface": {
+      "input": ["parameterSet", "seedHex"],
+      "output": ["pk=<hex>", "sk=<hex>"],
+      "acceptedForNewAdapter": false,
+      "reason": "Secrets are transported in argv and RNG state is process-global."
+    },
+    "reusable": [
+      "parameter-set mapping",
+      "seed-to-keyGen behavioral baseline",
+      "public keyGen fixture counts and hashes"
+    ],
+    "notReusable": [
+      "command-line secret transport",
+      "standalone JSON parser and serializer",
+      "process-global randombytes shim",
+      "absolute-path rebuild examples",
+      "compiled objects and binaries"
+    ],
+    "sourceHashes": {
+      "Makefile": "5e32a7e62eb6c9176030b6647edca2a2c46b7ff6662dfe7d8bfbc88deba261fa",
+      "README.md": "07f696ce21d8d4da27f342f643ff1fec414678613795e75b606e0b2c0421d6ed",
+      "scripts/prompt_to_answer.py": "d047de592681bb7507ccc9c47b871e3977d39679f19a56519bdbc4c0069b291c",
+      "scripts/rebuild_and_answer.sh": "0b07e73fbfd8a1bd2972807ed44303eb5e1b329130c83b44af607cf4ad120372",
+      "src/mldsa_keygen_once.c": "217179571ad25ce3a8ce4765191146a12ab2d2117a5effe8d9769a5232c67fda",
+      "src/iut_randombytes.c": "81eb6785c48bd13d119f6ff5131d0fd1b2db222f4410ec969254d73a26c8d627"
+    }
+  },
+  "publicSampleInventory": {
+    "source": "NIST ACVP-Server release v1.1.0.41",
+    "rawVectorsCommitted": false,
+    "modes": {
+      "keyGen": {
+        "groups": 3,
+        "tests": 75,
+        "sha256": "02fad612a060bbcf3bbbd164caf7e9da964ba385c90e08bcd26516e3bf8a023d"
+      },
+      "sigGen": {
+        "groups": 24,
+        "tests": 360,
+        "sha256": "4305197be3c17be8f99338086eb8033ff2400f7d5b816123fc28b184c6e77a55"
+      },
+      "sigVer": {
+        "groups": 12,
+        "tests": 180,
+        "sha256": "2a9b7fcbefdd8e69dd6fbe6b4abb7130d855e8429aaa6f4904385e68b7e63d3a"
+      }
+    }
+  },
+  "selectedV1Scope": {
+    "revision": "FIPS204",
+    "parameterSets": ["ML-DSA-44", "ML-DSA-65", "ML-DSA-87"],
+    "modes": ["keyGen", "sigGen", "sigVer"],
+    "interface": ["external"],
+    "signatureTypes": ["pure"],
+    "sigGenDeterministic": [true, false],
+    "messageLengthBits": {"min": 8, "max": 65536, "increment": 8},
+    "contextLengthBits": {"min": 0, "max": 2040, "increment": 8}
+  },
+  "deferred": [
+    "preHash",
+    "hashAlg dispatch",
+    "internal interface",
+    "externalMu",
+    "production entropy API"
+  ],
+  "containsCredentials": false,
+  "containsAcvtsIdentifiers": false,
+  "containsRawSecrets": false,
+  "passed": true
+}

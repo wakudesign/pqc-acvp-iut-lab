@@ -1,0 +1,210 @@
+{
+  "environment": {
+    "architecture": "arm64",
+    "chip": "Apple M4",
+    "compiler": "Apple clang version 21.0.0 (clang-2100.0.123.102)",
+    "cores": "proc 10:4:6:0",
+    "memory": "16 GB",
+    "modelIdentifier": "Mac16,1",
+    "modelName": "MacBook Pro",
+    "os": "macOS-26.5-arm64-arm-64bit-Mach-O"
+  },
+  "integrity": {
+    "allCasesProducedChecksums": true,
+    "benchmarkSourceSha256": "1ffdb893c33bf90717405906ca770301a02414ce2764b0b17e1ee1e918a45247",
+    "checksumsMatchedBetweenProfiles": true
+  },
+  "limitations": [
+    "This is a local Apple M4/macOS comparison, not a Jetson or Linux ARM64 result.",
+    "CPU frequency, thermal state, background load and core scheduling were not pinned.",
+    "Wall-clock measurements are suitable for directional comparison, not cycle-accurate claims.",
+    "Correctness is established by separate ACVP fixture differential tests, not by timing checksums."
+  ],
+  "methodology": {
+    "batchesPerInvocation": 16,
+    "excludedOverhead": "Python adapter and one-shot bridge process startup",
+    "executionOrder": [
+      "portable",
+      "aarch64Native",
+      "aarch64Native",
+      "portable"
+    ],
+    "fixedDeterministicInputs": true,
+    "iterationsPerBatch": 500,
+    "processBoundary": "in-process direct public deterministic APIs",
+    "samplesPerProfileAndCase": 32,
+    "statistics": [
+      "minimum",
+      "median",
+      "p95",
+      "portable median / native median"
+    ],
+    "timer": "clock_gettime(CLOCK_MONOTONIC_RAW)",
+    "warmupOperationsPerCase": 20
+  },
+  "passed": true,
+  "profiles": {
+    "aarch64Native": {
+      "benchmarkBinarySha256": "6046fcacbf90062618ea3adc7e1b63ffa321e749cc6c43f31ac5726730357971",
+      "librarySha256": "af1632a572bf374a5cb6d1bd0e18c5c4b13e6e4565930958a52f92cda467e95f",
+      "nativeArithmetic": true,
+      "nativeFips202": true,
+      "profile": "aarch64-native-multilevel"
+    },
+    "portable": {
+      "benchmarkBinarySha256": "372e40288f92f674aca02e6d67ada85f4c32b0f61fb17c0deb60dece4d6d5d38",
+      "librarySha256": "70c04d46a657c96ab1030ce00b4a0403de1553fbc4236c5e668edf9e3afd7158",
+      "nativeArithmetic": false,
+      "nativeFips202": false,
+      "profile": "portable-c-multilevel"
+    }
+  },
+  "results": [
+    {
+      "aarch64Native": {
+        "medianNsPerOperation": 3108.25,
+        "minNsPerOperation": 2853.25,
+        "p95NsPerOperation": 3229.92
+      },
+      "nativeSpeedupByMedian": 2.06,
+      "operation": "keyGen",
+      "parameterSet": "ML-KEM-512",
+      "portable": {
+        "medianNsPerOperation": 6403.96,
+        "minNsPerOperation": 6100.17,
+        "p95NsPerOperation": 9600.42
+      },
+      "sampleCountPerProfile": 32
+    },
+    {
+      "aarch64Native": {
+        "medianNsPerOperation": 3655.33,
+        "minNsPerOperation": 3494.83,
+        "p95NsPerOperation": 3793.75
+      },
+      "nativeSpeedupByMedian": 1.91,
+      "operation": "encapsulation",
+      "parameterSet": "ML-KEM-512",
+      "portable": {
+        "medianNsPerOperation": 6983.21,
+        "minNsPerOperation": 6841.58,
+        "p95NsPerOperation": 7112.25
+      },
+      "sampleCountPerProfile": 32
+    },
+    {
+      "aarch64Native": {
+        "medianNsPerOperation": 4762.58,
+        "minNsPerOperation": 4562.0,
+        "p95NsPerOperation": 4930.92
+      },
+      "nativeSpeedupByMedian": 1.757,
+      "operation": "decapsulation",
+      "parameterSet": "ML-KEM-512",
+      "portable": {
+        "medianNsPerOperation": 8365.62,
+        "minNsPerOperation": 8213.58,
+        "p95NsPerOperation": 8492.33
+      },
+      "sampleCountPerProfile": 32
+    },
+    {
+      "aarch64Native": {
+        "medianNsPerOperation": 5275.17,
+        "minNsPerOperation": 5008.08,
+        "p95NsPerOperation": 5418.67
+      },
+      "nativeSpeedupByMedian": 1.91,
+      "operation": "keyGen",
+      "parameterSet": "ML-KEM-768",
+      "portable": {
+        "medianNsPerOperation": 10078.12,
+        "minNsPerOperation": 9896.0,
+        "p95NsPerOperation": 10257.08
+      },
+      "sampleCountPerProfile": 32
+    },
+    {
+      "aarch64Native": {
+        "medianNsPerOperation": 5814.37,
+        "minNsPerOperation": 5544.83,
+        "p95NsPerOperation": 5998.83
+      },
+      "nativeSpeedupByMedian": 1.95,
+      "operation": "encapsulation",
+      "parameterSet": "ML-KEM-768",
+      "portable": {
+        "medianNsPerOperation": 11337.62,
+        "minNsPerOperation": 11139.83,
+        "p95NsPerOperation": 11495.42
+      },
+      "sampleCountPerProfile": 32
+    },
+    {
+      "aarch64Native": {
+        "medianNsPerOperation": 7429.0,
+        "minNsPerOperation": 7027.67,
+        "p95NsPerOperation": 7638.5
+      },
+      "nativeSpeedupByMedian": 1.771,
+      "operation": "decapsulation",
+      "parameterSet": "ML-KEM-768",
+      "portable": {
+        "medianNsPerOperation": 13157.79,
+        "minNsPerOperation": 12900.75,
+        "p95NsPerOperation": 13352.17
+      },
+      "sampleCountPerProfile": 32
+    },
+    {
+      "aarch64Native": {
+        "medianNsPerOperation": 7589.54,
+        "minNsPerOperation": 7285.17,
+        "p95NsPerOperation": 7760.83
+      },
+      "nativeSpeedupByMedian": 2.077,
+      "operation": "keyGen",
+      "parameterSet": "ML-KEM-1024",
+      "portable": {
+        "medianNsPerOperation": 15766.92,
+        "minNsPerOperation": 15528.33,
+        "p95NsPerOperation": 16098.17
+      },
+      "sampleCountPerProfile": 32
+    },
+    {
+      "aarch64Native": {
+        "medianNsPerOperation": 8405.17,
+        "minNsPerOperation": 8019.33,
+        "p95NsPerOperation": 8641.33
+      },
+      "nativeSpeedupByMedian": 2.054,
+      "operation": "encapsulation",
+      "parameterSet": "ML-KEM-1024",
+      "portable": {
+        "medianNsPerOperation": 17268.37,
+        "minNsPerOperation": 17113.5,
+        "p95NsPerOperation": 17423.0
+      },
+      "sampleCountPerProfile": 32
+    },
+    {
+      "aarch64Native": {
+        "medianNsPerOperation": 10700.46,
+        "minNsPerOperation": 10440.75,
+        "p95NsPerOperation": 10906.5
+      },
+      "nativeSpeedupByMedian": 1.837,
+      "operation": "decapsulation",
+      "parameterSet": "ML-KEM-1024",
+      "portable": {
+        "medianNsPerOperation": 19654.63,
+        "minNsPerOperation": 19419.17,
+        "p95NsPerOperation": 19882.92
+      },
+      "sampleCountPerProfile": 32
+    }
+  ],
+  "schemaVersion": 1,
+  "scope": "mlkem-native portable versus AArch64-native in-process benchmark"
+}

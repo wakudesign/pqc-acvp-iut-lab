@@ -1,0 +1,177 @@
+{
+  "backend": {
+    "commit": "0ba906cb14b1c241476134d7403a811b382ca498",
+    "compiler": "cc: Apple clang version 21.0.0 (clang-2100.0.123.102)",
+    "flags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror=unused-result",
+      "-Wpedantic",
+      "-Werror",
+      "-Wmissing-prototypes",
+      "-Wshadow",
+      "-Wpointer-arith",
+      "-Wredundant-decls",
+      "-Wconversion",
+      "-Wsign-conversion",
+      "-Wno-long-long",
+      "-Wno-unknown-pragmas",
+      "-Wno-unused-command-line-argument",
+      "-O3",
+      "-fomit-frame-pointer",
+      "-std=c99",
+      "-pedantic",
+      "-MMD",
+      "-Wno-redundant-decls",
+      "MLK_CONFIG_MULTILEVEL_BUILD=1",
+      "MLK_CONFIG_USE_NATIVE_BACKEND_ARITH=0",
+      "MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202=0",
+      "ZERO_AR_DATE=1"
+    ],
+    "name": "mlkem-native",
+    "target": "arm64-apple-darwin25.5.0",
+    "version": "v1.2.0"
+  },
+  "comparisonBaseline": "PQClean responses from a privately retained passed ACVTS Demo session",
+  "credentialsRequired": false,
+  "networkRequired": false,
+  "passed": true,
+  "rawSessionIdentifiersIncluded": false,
+  "runSummary": {
+    "status": "passed",
+    "totalTestsProduced": 240,
+    "totalTestsSeen": 240,
+    "totalVectorSets": 2,
+    "vectorSets": [
+      {
+        "algorithm": "ML-KEM",
+        "backend": {
+          "commit": "0ba906cb14b1c241476134d7403a811b382ca498",
+          "compiler": "cc: Apple clang version 21.0.0 (clang-2100.0.123.102)",
+          "flags": [
+            "-Wall",
+            "-Wextra",
+            "-Werror=unused-result",
+            "-Wpedantic",
+            "-Werror",
+            "-Wmissing-prototypes",
+            "-Wshadow",
+            "-Wpointer-arith",
+            "-Wredundant-decls",
+            "-Wconversion",
+            "-Wsign-conversion",
+            "-Wno-long-long",
+            "-Wno-unknown-pragmas",
+            "-Wno-unused-command-line-argument",
+            "-O3",
+            "-fomit-frame-pointer",
+            "-std=c99",
+            "-pedantic",
+            "-MMD",
+            "-Wno-redundant-decls",
+            "MLK_CONFIG_MULTILEVEL_BUILD=1",
+            "MLK_CONFIG_USE_NATIVE_BACKEND_ARITH=0",
+            "MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202=0",
+            "ZERO_AR_DATE=1"
+          ],
+          "name": "mlkem-native",
+          "target": "arm64-apple-darwin25.5.0",
+          "version": "v1.2.0"
+        },
+        "errors": [],
+        "functionCounts": {
+          "keyGen": 75
+        },
+        "groupsSeen": 3,
+        "mode": "keyGen",
+        "revision": "FIPS203",
+        "status": "generated",
+        "testsProduced": 75,
+        "testsSeen": 75
+      },
+      {
+        "algorithm": "ML-KEM",
+        "backend": {
+          "commit": "0ba906cb14b1c241476134d7403a811b382ca498",
+          "compiler": "cc: Apple clang version 21.0.0 (clang-2100.0.123.102)",
+          "flags": [
+            "-Wall",
+            "-Wextra",
+            "-Werror=unused-result",
+            "-Wpedantic",
+            "-Werror",
+            "-Wmissing-prototypes",
+            "-Wshadow",
+            "-Wpointer-arith",
+            "-Wredundant-decls",
+            "-Wconversion",
+            "-Wsign-conversion",
+            "-Wno-long-long",
+            "-Wno-unknown-pragmas",
+            "-Wno-unused-command-line-argument",
+            "-O3",
+            "-fomit-frame-pointer",
+            "-std=c99",
+            "-pedantic",
+            "-MMD",
+            "-Wno-redundant-decls",
+            "MLK_CONFIG_MULTILEVEL_BUILD=1",
+            "MLK_CONFIG_USE_NATIVE_BACKEND_ARITH=0",
+            "MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202=0",
+            "ZERO_AR_DATE=1"
+          ],
+          "name": "mlkem-native",
+          "target": "arm64-apple-darwin25.5.0",
+          "version": "v1.2.0"
+        },
+        "errors": [],
+        "functionCounts": {
+          "decapsulation": 30,
+          "decapsulationKeyCheck": 30,
+          "encapsulation": 75,
+          "encapsulationKeyCheck": 30
+        },
+        "groupsSeen": 12,
+        "mode": "encapDecap",
+        "revision": "FIPS203",
+        "status": "generated",
+        "testsProduced": 165,
+        "testsSeen": 165
+      }
+    ]
+  },
+  "schemaVersion": 1,
+  "totalTests": 240,
+  "validationLevel": "offline differential fixture replay",
+  "vectors": [
+    {
+      "alias": "mlkem-keygen",
+      "byteIdenticalToPQClean": true,
+      "functionCounts": {
+        "keyGen": 75
+      },
+      "mode": "keyGen",
+      "responseSha256": "e7721f4f1d46f2a3120ed6ba01e31e218fb708258053ea16f89d1c8c1f219e33",
+      "semanticIdenticalToPQClean": true,
+      "status": "generated",
+      "testsProduced": 75,
+      "testsSeen": 75
+    },
+    {
+      "alias": "mlkem-encap-decap",
+      "byteIdenticalToPQClean": true,
+      "functionCounts": {
+        "decapsulation": 30,
+        "decapsulationKeyCheck": 30,
+        "encapsulation": 75,
+        "encapsulationKeyCheck": 30
+      },
+      "mode": "encapDecap",
+      "responseSha256": "6b1452d0e653eae68c153b36af4efe0e5e4e480f2054e9198a2797f865cbd319",
+      "semanticIdenticalToPQClean": true,
+      "status": "generated",
+      "testsProduced": 165,
+      "testsSeen": 165
+    }
+  ]
+}

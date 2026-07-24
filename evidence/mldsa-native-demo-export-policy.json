@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "sessionAlias": "mldsa-native-demo-session",
+  "includeRawVectors": false,
+  "expected": {
+    "algorithm": "ML-DSA",
+    "revision": "FIPS204",
+    "parameterSets": [
+      "ML-DSA-44",
+      "ML-DSA-65",
+      "ML-DSA-87"
+    ],
+    "vectors": [
+      {
+        "alias": "mldsa-native-keygen",
+        "mode": "keyGen",
+        "groups": 3,
+        "tests": 75,
+        "functions": ["keyGen"]
+      },
+      {
+        "alias": "mldsa-native-siggen-pure-external",
+        "mode": "sigGen",
+        "groups": 6,
+        "tests": 90,
+        "functions": ["sigGen"]
+      },
+      {
+        "alias": "mldsa-native-sigver-pure-external",
+        "mode": "sigVer",
+        "groups": 3,
+        "tests": 45,
+        "functions": ["sigVer"]
+      }
+    ]
+  }
+}

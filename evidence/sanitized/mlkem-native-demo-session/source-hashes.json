@@ -1,0 +1,17 @@
+{
+  "sessionAlias": "mlkem-native-demo-session",
+  "vectors": [
+    {
+      "alias": "mlkem-native-keygen",
+      "requestSha256": "5fadee8fe0a1c5bb9e5d932cb1b5facf26d625bbf959f34a19b9f57d65bbafb9",
+      "responseSha256": "f04850d7891f1bb2e4d3cf4ee721ba336d5e6eaf74761a7ab8b52eadeaa136fa",
+      "verdictSha256": "bcfc678dc147b29a13fe36e91bc032df37ef68492172f43c4318cf172a3b8345"
+    },
+    {
+      "alias": "mlkem-native-encap-decap",
+      "requestSha256": "6bfd1260edaf093873e9c2243a2afde98a941cd80c2be5292c7bc78932ef6040",
+      "responseSha256": "b90c54eb52d06217aed7ef0d8136ab2512b08d2a659c1ba572ad2a37e100aac2",
+      "verdictSha256": "29c31795d85562a80adca138c0852e787d25c6f49966dd4b70a03a8b601bbd38"
+    }
+  ]
+}

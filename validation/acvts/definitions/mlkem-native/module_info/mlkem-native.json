@@ -1,0 +1,16 @@
+{
+  "moduleName":"mlkem-native ACVP adapter",
+  "moduleVersion":"1.2.0-portfolio.1",
+  "moduleDescription":"ACVTS Demo-only integration of pinned mlkem-native v1.2.0 through an owner-authored deterministic ACVP adapter.",
+  "moduleType":0,
+  "acvpModuleIds":[
+    {
+      "acvpModuleName":"mlkem-native ACVP adapter (Demo)",
+      "acvpModuleId":0
+    },
+    {
+      "acvpModuleName":"mlkem-native ACVP adapter (ML-KEM portable multilevel)",
+      "acvpModuleId":0
+    }
+  ]
+}

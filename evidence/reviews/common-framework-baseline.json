@@ -1,0 +1,117 @@
+{
+  "backend": {
+    "commit": "3730b32aa50ba9e712592c1476bdd048f5f6ed7e",
+    "compiler": "Apple clang 21.0.0",
+    "flags": [
+      "-O2",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic"
+    ],
+    "name": "PQClean",
+    "target": "arm64-apple-darwin25.5.0",
+    "version": "baseline"
+  },
+  "credentialsRequired": false,
+  "framework": "pqc_acvp common ML-KEM framework",
+  "networkRequired": false,
+  "passed": true,
+  "runSummary": {
+    "status": "passed",
+    "totalTestsProduced": 240,
+    "totalTestsSeen": 240,
+    "totalVectorSets": 2,
+    "vectorSets": [
+      {
+        "algorithm": "ML-KEM",
+        "backend": {
+          "commit": "3730b32aa50ba9e712592c1476bdd048f5f6ed7e",
+          "compiler": "Apple clang 21.0.0",
+          "flags": [
+            "-O2",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-Wpedantic"
+          ],
+          "name": "PQClean",
+          "target": "arm64-apple-darwin25.5.0",
+          "version": "baseline"
+        },
+        "errors": [],
+        "functionCounts": {
+          "keyGen": 75
+        },
+        "groupsSeen": 3,
+        "mode": "keyGen",
+        "revision": "FIPS203",
+        "status": "generated",
+        "testsProduced": 75,
+        "testsSeen": 75
+      },
+      {
+        "algorithm": "ML-KEM",
+        "backend": {
+          "commit": "3730b32aa50ba9e712592c1476bdd048f5f6ed7e",
+          "compiler": "Apple clang 21.0.0",
+          "flags": [
+            "-O2",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-Wpedantic"
+          ],
+          "name": "PQClean",
+          "target": "arm64-apple-darwin25.5.0",
+          "version": "baseline"
+        },
+        "errors": [],
+        "functionCounts": {
+          "decapsulation": 30,
+          "decapsulationKeyCheck": 30,
+          "encapsulation": 75,
+          "encapsulationKeyCheck": 30
+        },
+        "groupsSeen": 12,
+        "mode": "encapDecap",
+        "revision": "FIPS203",
+        "status": "generated",
+        "testsProduced": 165,
+        "testsSeen": 165
+      }
+    ]
+  },
+  "schemaVersion": 1,
+  "sessionLifecycleManaged": false,
+  "totalTests": 240,
+  "vectors": [
+    {
+      "alias": "mlkem-keygen",
+      "byteIdentical": true,
+      "functionCounts": {
+        "keyGen": 75
+      },
+      "mode": "keyGen",
+      "responseSha256": "e7721f4f1d46f2a3120ed6ba01e31e218fb708258053ea16f89d1c8c1f219e33",
+      "status": "generated",
+      "testsProduced": 75,
+      "testsSeen": 75
+    },
+    {
+      "alias": "mlkem-encap-decap",
+      "byteIdentical": true,
+      "functionCounts": {
+        "decapsulation": 30,
+        "decapsulationKeyCheck": 30,
+        "encapsulation": 75,
+        "encapsulationKeyCheck": 30
+      },
+      "mode": "encapDecap",
+      "responseSha256": "6b1452d0e653eae68c153b36af4efe0e5e4e480f2054e9198a2797f865cbd319",
+      "status": "generated",
+      "testsProduced": 165,
+      "testsSeen": 165
+    }
+  ]
+}

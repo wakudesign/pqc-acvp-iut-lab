@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "suite": "common ACVP framework unit tests",
+  "command": "PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_*.py' -v",
+  "credentialsRequired": false,
+  "networkRequired": false,
+  "passed": true,
+  "testsRun": 36,
+  "coverageClaims": [
+    "ML-KEM parameter-set mapping and sizes",
+    "hex decoding and input length validation",
+    "missing and unknown ACVP fields",
+    "unsupported mode and function",
+    "golden response semantic comparison",
+    "backend failure produces no partial response",
+    "backend modules exclude network clients and ACVTS session lifecycle"
+  ],
+  "offlineRegression": {
+    "testsRun": 240,
+    "passed": true,
+    "report": "common-framework-baseline.json"
+  }
+}
