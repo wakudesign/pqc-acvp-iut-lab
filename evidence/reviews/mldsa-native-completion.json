@@ -54,7 +54,6 @@
     },
     "v1_1Release": {
       "blockers": [
-        "Git repository has no configured remote",
         "v1.1 tag and GitHub release have not been created"
       ],
       "gitRepositoryPresent": true,
@@ -64,7 +63,7 @@
       "ownerEvidenceReviewApproved": true,
       "published": false,
       "remoteCiRunObserved": false,
-      "remoteConfigured": false
+      "remoteConfigured": true
     }
   },
   "publicReleaseApproved": true,
